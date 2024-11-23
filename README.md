@@ -11,6 +11,9 @@ A Python library for handling Microsoft Office documents, built with [LibreOffic
 - Python 3.10 or higher
 
 - LibreOffice 7.2 or higher
+```bash
+sudo apt-get install -y libreoffice libreoffice-dev libreoffice-dev-doc
+```
 
 - The fonts used in the document must be installed on the system.For example,use Chinese, on Ubuntu, you can install the fonts by running the following command:
 ```bash
