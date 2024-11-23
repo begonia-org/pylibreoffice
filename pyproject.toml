@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pyoffice"
+version = "0.1.0"
+description = "A Python library for handling Microsoft Office documents, built with [LibreOfficeKit](https://docs.libreoffice.org/libreofficekit.html)."
+authors = ["vforfreedom <vforfreedom96@gmail.com>"]
+readme = "README.md"
+[project.urls]
+Homepage = "https://github.com/begonia-org/pyoffice"
+Issues = "https://github.com/begonia-org/pyoffice/issues"
+[tool.poetry.dependencies]
+python = "^3.10"
+cython = "^3.0.11"
+
+
+[[tool.poetry.source]]
+name = "mirrors"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
