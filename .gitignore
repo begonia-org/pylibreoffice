@@ -4,3 +4,10 @@ __pycache__/
 *.pyc
 build/*
 *.so
+pyoffice_demo
+pyoffice/pyoffice_demo
+soffice.py
+output/
+output/*
+pyoffice.egg-info/
+pyoffice.egg-info/*

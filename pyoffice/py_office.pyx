@@ -13,8 +13,9 @@ cdef extern from "office.hpp" namespace "office":
         Office(string bin_dir)
         # saveAs(const std::string& output_file, const std::string& format)
         bint saveAs(string input_file, string output_file, string out_format)
+        bint release()
 
-cdef class PyOffice:
+cdef class CyOffice:
     cdef Office* office  # 声明 C++ 指针
 
     def __cinit__(self, str libreoffice_dir="/usr/lib/libreoffice/program"):
@@ -27,3 +28,5 @@ cdef class PyOffice:
     
     def save_as(self, str input_file, str output_file, out_format="pdf")->bool:
         return self.office.saveAs(input_file, output_file, out_format)
+    def release(self):
+        self.office.release()

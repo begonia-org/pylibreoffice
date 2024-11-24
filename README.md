@@ -31,9 +31,22 @@ pip install pyoffice
 ```python
 from pyoffice.py_office import PyOffice
 
+
+class Example:
+    def __init__(self):
+        self.office = PyOffice("/usr/lib/libreoffice/program/")
+
+    def doc(self):
+        # Convert the doc file to pdf
+        print(self.office.save_as("./test.doc", "./test.pdf", "pdf"))
+
+    def xls(self):
+        # Convert the xls file to pdf
+        print(self.office.save_as("./test.xls", "./test_xls.pdf", "pdf"))
+
+
 if __name__ == '__main__':
-    # The path to the installed LibreOffice or the LibreOfficeKit library.
-    office = PyOffice("/usr/lib/libreoffice/program/")
-    # Convert the doc file to pdf
-    print(office.save_as("./test.doc", "./test.pdf", "pdf"))
+    ex = Example()
+    ex.xls()
+    ex.doc()
 ```

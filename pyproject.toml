@@ -4,7 +4,15 @@ version = "0.1.0"
 description = "A Python library for handling Microsoft Office documents, built with [LibreOfficeKit](https://docs.libreoffice.org/libreofficekit.html)."
 authors = ["vforfreedom <vforfreedom96@gmail.com>"]
 readme = "README.md"
+[project]
+name = "pyoffice"
+version = "0.1.0"
+description = "A Python library for handling Microsoft Office documents, built with [LibreOfficeKit](https://docs.libreoffice.org/libreofficekit.html)."
+authors = [    { name = "vforfreedom", email = "vforfreedom96@gmail.com" }
+]
+readme = "README.md"
 [project.urls]
+name = "pyoffice"
 Homepage = "https://github.com/begonia-org/pyoffice"
 Issues = "https://github.com/begonia-org/pyoffice/issues"
 [tool.poetry.dependencies]

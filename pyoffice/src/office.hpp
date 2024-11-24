@@ -12,6 +12,7 @@ public:
     ~Office();
 
     bool saveAs(const std::string &input_file, const std::string& output_file, const std::string& format);
+    bool release();
 
 private:
     lok::Office *office = nullptr;
