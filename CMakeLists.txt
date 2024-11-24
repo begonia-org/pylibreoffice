@@ -14,7 +14,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # 设置编译选项
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -g -Wall -W -Wno-shadow -Wno-unused-parameter -Wpointer-arith -Wcast-align")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -Wall -W -Wno-shadow -Wno-unused-parameter -Wpointer-arith -Wcast-align")
 
 find_package(Python3 REQUIRED COMPONENTS Interpreter Development)
 include_directories(${Python3_INCLUDE_DIRS})
@@ -45,7 +45,7 @@ include_directories(${LIBREOFFICE_INCLUDE_DIR}, ${LIBREOFFICE_DIR})
 
 #################################生成office库#################################
 # 指定 src/ 下的源文件
-file(GLOB OFFICE_SRCS "${WORKDIR}/pyoffice/src/*.cxx")
+file(GLOB OFFICE_SRCS "${WORKDIR}/src/*.cxx")
 list(APPEND OFFICE_SRCS
 )
 
@@ -60,7 +60,7 @@ set_target_properties(office PROPERTIES
 # 生成py_office.cpp
 
 # 定义 Cython 生成的 .cpp 文件路径
-set(CYTHON_CPP_FILE "${WORKDIR}/pyoffice/src/py_office.cpp")
+set(CYTHON_CPP_FILE "${WORKDIR}/src/py_office.cpp")
 
 # 使用 Cython 将 .pyx 文件转换为 .cpp 文件
 add_custom_command(
@@ -84,13 +84,13 @@ target_link_libraries(py_office PRIVATE ${Python3_LIBRARIES} office)
 
 #################################生成demo程序#################################
 # 指定测试程序的源文件
-file(GLOB TEST_SRCS "${WORKDIR}/pyoffice/src/main.cxx")
+file(GLOB TEST_SRCS "${WORKDIR}/src/main.cxx")
 
 # 创建可执行文件
 add_executable(pyoffice_demo ${TEST_SRCS})
 # 设置可执行文件的输出路径
 set_target_properties(pyoffice_demo PROPERTIES
-    RUNTIME_OUTPUT_DIRECTORY "${WORKDIR}/pyoffice"
+    RUNTIME_OUTPUT_DIRECTORY "${WORKDIR}"
 )
 
 # 链接库到可执行文件
