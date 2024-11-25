@@ -4006,7 +4006,7 @@ if (!__Pyx_RefNanny) {
   /* "pyoffice/py_office.pyx":1
  * # cython: language_level=3             # <<<<<<<<<<<<<<
  * # distutils: sources = src/office.cxx
- * # py_neo_blink.pyx
+ * # py_office.pyx
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);

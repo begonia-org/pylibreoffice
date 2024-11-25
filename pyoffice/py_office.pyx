@@ -1,6 +1,6 @@
 # cython: language_level=3
 # distutils: sources = src/office.cxx
-# py_neo_blink.pyx
+# py_office.pyx
 # distutils: language=c++
 # cython: c_string_type=unicode, c_string_encoding=utf8
 

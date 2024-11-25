@@ -4,6 +4,22 @@ version = "0.1.0"
 description = "A Python library for handling Microsoft Office documents, built with [LibreOfficeKit](https://docs.libreoffice.org/libreofficekit.html)."
 authors = ["vforfreedom <vforfreedom96@gmail.com>"]
 readme = "README.md"
+packages = [
+    { include = "pyoffice" }  # 包含 `pyoffice` 包
+]
+
+# 明确包含特定文件
+include = [
+    "pyoffice/*.pyx",
+    "pyoffice/*.so",
+    "pyoffice/liboffice.so"
+]
+[tool.poetry.group.dev.dependencies]
+build = "^1.2.2.post1"
+twine = "^5.1.1"
+auditwheel = "^6.1.0"
+cibuildwheel = "^2.22.0"
+
 [project]
 name = "pyoffice"
 version = "0.1.0"
@@ -12,12 +28,16 @@ authors = [    { name = "vforfreedom", email = "vforfreedom96@gmail.com" }
 ]
 readme = "README.md"
 [project.urls]
-name = "pyoffice"
+url = "https://github.com/begonia-org/pyoffice"
+"Home Page" = "https://github.com/begonia-org/pyoffice"
 Homepage = "https://github.com/begonia-org/pyoffice"
 Issues = "https://github.com/begonia-org/pyoffice/issues"
+Documentation = "https://github.com/begonia-org/pyoffice"
+Repository = "https://github.com/begonia-org/pyoffice.git"
 [tool.poetry.dependencies]
 python = "^3.10"
 cython = "^3.0.11"
+pybind11 = "^2.13.6"
 
 
 [[tool.poetry.source]]
@@ -26,5 +46,18 @@ url = "https://mirrors.aliyun.com/pypi/simple/"
 priority = "primary"
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["setuptools", "wheel", "cmake", "cython", "pybind11"]
+build-backend = "setuptools.build_meta"
+[tool.setuptools]
+include-package-data = true  # 确保打包时包含非 Python 文件
+
+[tool.cibuildwheel]
+build = "*"
+skip = ""
+test-skip = ""
+free-threaded-support = false
+enable = []
+
+archs = ["x86_64"]
+before-build = "./install_deps.sh"
+container-engine = "docker; create_args: --network=host"

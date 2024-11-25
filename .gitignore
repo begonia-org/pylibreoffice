@@ -11,3 +11,13 @@ output/
 output/*
 pyoffice.egg-info/
 pyoffice.egg-info/*
+dist/
+dist/*
+wheelhouse/
+wheelhouse/*
+*.whl
+*.tar.gz
+thirdparty/
+thirdparty/*
+third_party
+third_party/

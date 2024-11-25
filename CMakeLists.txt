@@ -10,35 +10,37 @@ set(LIBREOFFICE_DIR "${WORKDIR}/../core/include")
 set(CMAKE_CXX_COMPILER "g++")
 
 # 设置 C++ 标准
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # 设置编译选项
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -Wall -W -Wno-shadow -Wno-unused-parameter -Wpointer-arith -Wcast-align")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -ldl -Wall -W -Wno-shadow -Wno-unused-parameter -Wpointer-arith -Wcast-align")
 
-find_package(Python3 REQUIRED COMPONENTS Interpreter Development)
+# find_package(Python3 REQUIRED COMPONENTS Interpreter Development)
 include_directories(${Python3_INCLUDE_DIRS})
 find_program(CYTHON_EXECUTABLE cython REQUIRED)
 message(STATUS "Python3_EXECUTABLE: ${Python3_EXECUTABLE}")
 message(STATUS "Python3_INCLUDE_DIRS: ${Python3_INCLUDE_DIRS}")
-message(STATUS "Python3_LIBRARIES: ${Python3_LIBRARIES}")
-message(STATUS "Python3_SITEARCH is: ${Python3_SITEARCH}")
+# message(STATUS "Python3_LIBRARIES: ${Python3_LIBRARIES}")
+# message(STATUS "Python3_SITEARCH is: ${Python3_SITEARCH}")
 # 查找 LibreOfficeKit 的头文件
 find_path(LIBREOFFICE_INCLUDE_DIR LibreOfficeKit/LibreOfficeKit.hxx
-          PATHS /usr/include /usr/local/include /opt/libreoffice/include ${LIBREOFFICE_DIR}
+          PATHS /usr/include /usr/local/include /opt/libreoffice/include /opt/libreoffice24.8/sdk/include ${LIBREOFFICE_DIR}
           PATH_SUFFIXES LibreOfficeKit)
 
 # 查找 LibreOfficeKit 的库文件
-find_library(LIBREOFFICE_LIBRARY libmergedlo.so
-             PATHS /usr/lib /usr/local/lib /opt/libreoffice/lib "/usr/lib/libreoffice/program/" "/usr/lib64/libreoffice/program/")
+find_library(LIBREOFFICE_LIBRARY "libmergedlo.so"
+             PATHS /usr/lib /usr/local/lib /opt/libreoffice/lib "/opt/libreoffice24.8/program" "/opt/libreoffice/program" "/usr/lib/libreoffice/program" "/usr/lib64/libreoffice/program")
 
 # 检测是否找到头文件和库
 if (LIBREOFFICE_INCLUDE_DIR AND LIBREOFFICE_LIBRARY)
+set(LIBREOFFICE_DIR "${LIBREOFFICE_INCLUDE_DIR}")
+
     message(STATUS "LibreOfficeKit found:")
     message(STATUS "  Include directory: ${LIBREOFFICE_INCLUDE_DIR}")
     message(STATUS "  Library: ${LIBREOFFICE_LIBRARY}")
 else()
-    message(FATAL_ERROR "LibreOfficeKit not found. Please install libreoffice-dev.")
+    message(FATAL_ERROR "LibreOfficeKit not found. Please install libreoffice.")
 endif()
 
 include_directories(${LIBREOFFICE_INCLUDE_DIR}, ${LIBREOFFICE_DIR})
@@ -74,8 +76,10 @@ add_custom_command(
 add_library(py_office SHARED ${CYTHON_CPP_FILE})
 # 设置输出路径
 set_target_properties(py_office PROPERTIES PREFIX "")
+# 设置动态库的输出目录，继承自 CMake 的全局变量
 set_target_properties(py_office PROPERTIES
-    LIBRARY_OUTPUT_DIRECTORY "${WORKDIR}/pyoffice"
+    LIBRARY_OUTPUT_DIRECTORY ${CMAKE_LIBRARY_OUTPUT_DIRECTORY}
+    PREFIX ""
 )
 
 # 链接库到共享库
@@ -95,6 +99,21 @@ set_target_properties(pyoffice_demo PROPERTIES
 
 # 链接库到可执行文件
 target_link_libraries(pyoffice_demo PRIVATE office)
+
+
+###############################pybind11####################################
+# 设置 C++ 标准
+# set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# # 找到 Pybind11
+# find_package(pybind11 REQUIRED)
+
+# # 添加头文件目录
+# include_directories(include)
+
+# # 定义绑定模块
+# pybind11_add_module(pybind11_office src/pybind_office.cpp src/office.cxx)
+
 
 
 
