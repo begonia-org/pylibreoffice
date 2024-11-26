@@ -7,12 +7,13 @@
 '''
 
 
-from pyoffice.py_office import PyOffice
+from pylibreoffice.core import PyOffice
 
 
 class Example:
     def __init__(self):
         self.office = PyOffice("/usr/lib/libreoffice/program/")
+        # self.office2 = pybind_office.Office("/usr/lib/libreoffice/program/")
 
     def doc(self):
         # Convert the doc file to pdf

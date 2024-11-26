@@ -1,5 +1,6 @@
 include CMakeLists.txt
 recursive-include src *.*
-include pyoffice/py_office.pyx
-recursive-include pyoffice *.*
-include pyoffice/*.so
+include pylibreoffice/py_office.pyx
+recursive-include pylibreoffice *.*
+include pylibreoffice/*.so
+global-include *.so

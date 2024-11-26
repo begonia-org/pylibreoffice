@@ -1,4 +1,4 @@
-# pyoffice
+# pylibreoffice
 
 A Python library for handling Microsoft Office documents, built with [LibreOfficeKit](https://docs.libreoffice.org/libreofficekit.html).
 
@@ -23,13 +23,13 @@ sudo update-locale LANG=zh_CN.UTF-8
 ```
 
 ```bash
-pip install pyoffice
+pip install pylibreoffice
 ```
 
 ## Example
 
 ```python
-from pyoffice.py_office import PyOffice
+from pylibreoffice.py_office import PyOffice
 
 
 class Example:

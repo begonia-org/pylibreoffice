@@ -1,22 +1,18 @@
 #include <pybind11/pybind11.h>
-#include <pybind11/stl.h> // 支持 std::string 和其他 STL 容器
+#include <pybind11/stl.h> // 支持 STL 容器，如 std::string
 #include "office.hpp"
 
 namespace py = pybind11;
 
-// 定义 Python 类绑定
 PYBIND11_MODULE(pybind11_office, m) {
-    m.doc() = "Pybind11 bindings for Office";
+    m.doc() = "Pybind11 bindings for Office class";
 
-    py::class_<Office>(m, "Office")
-        .def(py::init<std::string>(), py::arg("bin_dir") = "/usr/lib/libreoffice/program")  // 绑定构造函数
-        .def("save_as", &Office::saveAs, py::arg("input_file"), py::arg("output_file"), py::arg("out_format") = "pdf",
-             "Save a file to a specific format")
-        .def("release", &Office::release, "Release resources");
-
-    py::class_<CyOffice>(m, "CyOffice")
-        .def(py::init<std::string>(), py::arg("libreoffice_dir") = "/usr/lib/libreoffice/program")  // 构造函数
-        .def("save_as", &CyOffice::save_as, py::arg("input_file"), py::arg("output_file"), py::arg("out_format") = "pdf",
-             "Save a file")
-        .def("release", &CyOffice::release, "Release resources");
+    // 绑定 office::Office 类
+    py::class_<office::Office>(m, "Office")
+        .def(py::init<const std::string &>(), py::arg("bin_dir"),
+             "Initialize the Office instance with LibreOffice binary directory")
+        .def("save_as", &office::Office::saveAs, 
+             py::arg("input_file"), py::arg("output_file"), py::arg("format"),
+             "Save the input file to the specified output format")
+        .def("release", &office::Office::release, "Release resources");
 }

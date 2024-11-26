@@ -9,7 +9,7 @@
 
 import time
 import unittest
-from pyoffice.pyoffice import PyOffice
+from pylibreoffice.core import PyOffice
 
 
 class TestDocConverter(unittest.TestCase):

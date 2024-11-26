@@ -22,4 +22,5 @@ thirdparty/*
 third_party
 third_party/
 _skbuild/
+_skbuild
 pyoffice.egg-info

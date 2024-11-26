@@ -1228,8 +1228,8 @@ static CYTHON_INLINE float __PYX_NAN() {
     #define __PYX_EXTERN_C extern "C++"
 #endif
 
-#define __PYX_HAVE__pyoffice__py_office
-#define __PYX_HAVE_API__pyoffice__py_office
+#define __PYX_HAVE__pylibreoffice__py_office
+#define __PYX_HAVE_API__pylibreoffice__py_office
 /* Early includes */
 #include <string.h>
 #include <string>
@@ -1501,16 +1501,16 @@ static const char *__pyx_f[] = {
 /* #### Code section: type_declarations ### */
 
 /*--- Type declarations ---*/
-struct __pyx_obj_8pyoffice_9py_office_CyOffice;
+struct __pyx_obj_13pylibreoffice_9py_office_CyOffice;
 
-/* "pyoffice/py_office.pyx":18
+/* "pylibreoffice/py_office.pyx":18
  *         bint release()
  * 
  * cdef class CyOffice:             # <<<<<<<<<<<<<<
  *     cdef Office* office  #  C++
  * 
  */
-struct __pyx_obj_8pyoffice_9py_office_CyOffice {
+struct __pyx_obj_13pylibreoffice_9py_office_CyOffice {
   PyObject_HEAD
   office::Office *office;
 };
@@ -2151,15 +2151,15 @@ static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 /* Module declarations from "libc.stdlib" */
 
-/* Module declarations from "pyoffice.py_office" */
+/* Module declarations from "pylibreoffice.py_office" */
 static std::string __pyx_convert_string_from_py_6libcpp_6string_std__in_string(PyObject *); /*proto*/
 /* #### Code section: typeinfo ### */
 /* #### Code section: before_global_var ### */
-#define __Pyx_MODULE_NAME "pyoffice.py_office"
-extern int __pyx_module_is_main_pyoffice__py_office;
-int __pyx_module_is_main_pyoffice__py_office = 0;
+#define __Pyx_MODULE_NAME "pylibreoffice.py_office"
+extern int __pyx_module_is_main_pylibreoffice__py_office;
+int __pyx_module_is_main_pylibreoffice__py_office = 0;
 
-/* Implementation of "pyoffice.py_office" */
+/* Implementation of "pylibreoffice.py_office" */
 /* #### Code section: global_var ### */
 static PyObject *__pyx_builtin_TypeError;
 /* #### Code section: string_decls ### */
@@ -2196,20 +2196,20 @@ static const char __pyx_k_CyOffice_release[] = "CyOffice.release";
 static const char __pyx_k_CyOffice_save_as[] = "CyOffice.save_as";
 static const char __pyx_k_asyncio_coroutines[] = "asyncio.coroutines";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
-static const char __pyx_k_pyoffice_py_office[] = "pyoffice.py_office";
+static const char __pyx_k_pylibreoffice_py_office[] = "pylibreoffice.py_office";
 static const char __pyx_k_CyOffice___reduce_cython[] = "CyOffice.__reduce_cython__";
 static const char __pyx_k_CyOffice___setstate_cython[] = "CyOffice.__setstate_cython__";
 static const char __pyx_k_usr_lib_libreoffice_program[] = "/usr/lib/libreoffice/program";
-static const char __pyx_k_data_work_office_converter_pyof[] = "/data/work/office-converter/pyoffice/py_office.pyx";
+static const char __pyx_k_data_work_office_converter_pyli[] = "/data/work/office-converter/pylibreoffice/py_office.pyx";
 static const char __pyx_k_no_default___reduce___due_to_non[] = "no default __reduce__ due to non-trivial __cinit__";
 /* #### Code section: decls ### */
-static int __pyx_pf_8pyoffice_9py_office_8CyOffice___cinit__(struct __pyx_obj_8pyoffice_9py_office_CyOffice *__pyx_v_self, PyObject *__pyx_v_libreoffice_dir); /* proto */
-static void __pyx_pf_8pyoffice_9py_office_8CyOffice_2__dealloc__(struct __pyx_obj_8pyoffice_9py_office_CyOffice *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8pyoffice_9py_office_8CyOffice_4save_as(struct __pyx_obj_8pyoffice_9py_office_CyOffice *__pyx_v_self, PyObject *__pyx_v_input_file, PyObject *__pyx_v_output_file, PyObject *__pyx_v_out_format); /* proto */
-static PyObject *__pyx_pf_8pyoffice_9py_office_8CyOffice_6release(struct __pyx_obj_8pyoffice_9py_office_CyOffice *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8pyoffice_9py_office_8CyOffice_8__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_8pyoffice_9py_office_CyOffice *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_8pyoffice_9py_office_8CyOffice_10__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_8pyoffice_9py_office_CyOffice *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_tp_new_8pyoffice_9py_office_CyOffice(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static int __pyx_pf_13pylibreoffice_9py_office_8CyOffice___cinit__(struct __pyx_obj_13pylibreoffice_9py_office_CyOffice *__pyx_v_self, PyObject *__pyx_v_libreoffice_dir); /* proto */
+static void __pyx_pf_13pylibreoffice_9py_office_8CyOffice_2__dealloc__(struct __pyx_obj_13pylibreoffice_9py_office_CyOffice *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13pylibreoffice_9py_office_8CyOffice_4save_as(struct __pyx_obj_13pylibreoffice_9py_office_CyOffice *__pyx_v_self, PyObject *__pyx_v_input_file, PyObject *__pyx_v_output_file, PyObject *__pyx_v_out_format); /* proto */
+static PyObject *__pyx_pf_13pylibreoffice_9py_office_8CyOffice_6release(struct __pyx_obj_13pylibreoffice_9py_office_CyOffice *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13pylibreoffice_9py_office_8CyOffice_8__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_13pylibreoffice_9py_office_CyOffice *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13pylibreoffice_9py_office_8CyOffice_10__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_13pylibreoffice_9py_office_CyOffice *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_tp_new_13pylibreoffice_9py_office_CyOffice(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 /* #### Code section: late_includes ### */
 /* #### Code section: module_state ### */
 typedef struct {
@@ -2244,9 +2244,9 @@ typedef struct {
   #if CYTHON_USE_MODULE_STATE
   #endif
   #if CYTHON_USE_MODULE_STATE
-  PyObject *__pyx_type_8pyoffice_9py_office_CyOffice;
+  PyObject *__pyx_type_13pylibreoffice_9py_office_CyOffice;
   #endif
-  PyTypeObject *__pyx_ptype_8pyoffice_9py_office_CyOffice;
+  PyTypeObject *__pyx_ptype_13pylibreoffice_9py_office_CyOffice;
   PyObject *__pyx_n_s_CyOffice;
   PyObject *__pyx_n_s_CyOffice___reduce_cython;
   PyObject *__pyx_n_s_CyOffice___setstate_cython;
@@ -2257,7 +2257,7 @@ typedef struct {
   PyObject *__pyx_n_s_asyncio_coroutines;
   PyObject *__pyx_n_s_bool;
   PyObject *__pyx_n_s_cline_in_traceback;
-  PyObject *__pyx_kp_s_data_work_office_converter_pyof;
+  PyObject *__pyx_kp_s_data_work_office_converter_pyli;
   PyObject *__pyx_kp_u_disable;
   PyObject *__pyx_kp_u_enable;
   PyObject *__pyx_kp_u_gc;
@@ -2272,7 +2272,7 @@ typedef struct {
   PyObject *__pyx_n_s_out_format;
   PyObject *__pyx_n_s_output_file;
   PyObject *__pyx_n_u_pdf;
-  PyObject *__pyx_n_s_pyoffice_py_office;
+  PyObject *__pyx_n_s_pylibreoffice_py_office;
   PyObject *__pyx_n_s_pyx_state;
   PyObject *__pyx_n_s_reduce;
   PyObject *__pyx_n_s_reduce_cython;
@@ -2336,8 +2336,8 @@ static int __pyx_m_clear(PyObject *m) {
   #ifdef __Pyx_FusedFunction_USED
   Py_CLEAR(clear_module_state->__pyx_FusedFunctionType);
   #endif
-  Py_CLEAR(clear_module_state->__pyx_ptype_8pyoffice_9py_office_CyOffice);
-  Py_CLEAR(clear_module_state->__pyx_type_8pyoffice_9py_office_CyOffice);
+  Py_CLEAR(clear_module_state->__pyx_ptype_13pylibreoffice_9py_office_CyOffice);
+  Py_CLEAR(clear_module_state->__pyx_type_13pylibreoffice_9py_office_CyOffice);
   Py_CLEAR(clear_module_state->__pyx_n_s_CyOffice);
   Py_CLEAR(clear_module_state->__pyx_n_s_CyOffice___reduce_cython);
   Py_CLEAR(clear_module_state->__pyx_n_s_CyOffice___setstate_cython);
@@ -2348,7 +2348,7 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_asyncio_coroutines);
   Py_CLEAR(clear_module_state->__pyx_n_s_bool);
   Py_CLEAR(clear_module_state->__pyx_n_s_cline_in_traceback);
-  Py_CLEAR(clear_module_state->__pyx_kp_s_data_work_office_converter_pyof);
+  Py_CLEAR(clear_module_state->__pyx_kp_s_data_work_office_converter_pyli);
   Py_CLEAR(clear_module_state->__pyx_kp_u_disable);
   Py_CLEAR(clear_module_state->__pyx_kp_u_enable);
   Py_CLEAR(clear_module_state->__pyx_kp_u_gc);
@@ -2363,7 +2363,7 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_out_format);
   Py_CLEAR(clear_module_state->__pyx_n_s_output_file);
   Py_CLEAR(clear_module_state->__pyx_n_u_pdf);
-  Py_CLEAR(clear_module_state->__pyx_n_s_pyoffice_py_office);
+  Py_CLEAR(clear_module_state->__pyx_n_s_pylibreoffice_py_office);
   Py_CLEAR(clear_module_state->__pyx_n_s_pyx_state);
   Py_CLEAR(clear_module_state->__pyx_n_s_reduce);
   Py_CLEAR(clear_module_state->__pyx_n_s_reduce_cython);
@@ -2405,8 +2405,8 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   #ifdef __Pyx_FusedFunction_USED
   Py_VISIT(traverse_module_state->__pyx_FusedFunctionType);
   #endif
-  Py_VISIT(traverse_module_state->__pyx_ptype_8pyoffice_9py_office_CyOffice);
-  Py_VISIT(traverse_module_state->__pyx_type_8pyoffice_9py_office_CyOffice);
+  Py_VISIT(traverse_module_state->__pyx_ptype_13pylibreoffice_9py_office_CyOffice);
+  Py_VISIT(traverse_module_state->__pyx_type_13pylibreoffice_9py_office_CyOffice);
   Py_VISIT(traverse_module_state->__pyx_n_s_CyOffice);
   Py_VISIT(traverse_module_state->__pyx_n_s_CyOffice___reduce_cython);
   Py_VISIT(traverse_module_state->__pyx_n_s_CyOffice___setstate_cython);
@@ -2417,7 +2417,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_asyncio_coroutines);
   Py_VISIT(traverse_module_state->__pyx_n_s_bool);
   Py_VISIT(traverse_module_state->__pyx_n_s_cline_in_traceback);
-  Py_VISIT(traverse_module_state->__pyx_kp_s_data_work_office_converter_pyof);
+  Py_VISIT(traverse_module_state->__pyx_kp_s_data_work_office_converter_pyli);
   Py_VISIT(traverse_module_state->__pyx_kp_u_disable);
   Py_VISIT(traverse_module_state->__pyx_kp_u_enable);
   Py_VISIT(traverse_module_state->__pyx_kp_u_gc);
@@ -2432,7 +2432,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_out_format);
   Py_VISIT(traverse_module_state->__pyx_n_s_output_file);
   Py_VISIT(traverse_module_state->__pyx_n_u_pdf);
-  Py_VISIT(traverse_module_state->__pyx_n_s_pyoffice_py_office);
+  Py_VISIT(traverse_module_state->__pyx_n_s_pylibreoffice_py_office);
   Py_VISIT(traverse_module_state->__pyx_n_s_pyx_state);
   Py_VISIT(traverse_module_state->__pyx_n_s_reduce);
   Py_VISIT(traverse_module_state->__pyx_n_s_reduce_cython);
@@ -2489,9 +2489,9 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #if CYTHON_USE_MODULE_STATE
 #endif
 #if CYTHON_USE_MODULE_STATE
-#define __pyx_type_8pyoffice_9py_office_CyOffice __pyx_mstate_global->__pyx_type_8pyoffice_9py_office_CyOffice
+#define __pyx_type_13pylibreoffice_9py_office_CyOffice __pyx_mstate_global->__pyx_type_13pylibreoffice_9py_office_CyOffice
 #endif
-#define __pyx_ptype_8pyoffice_9py_office_CyOffice __pyx_mstate_global->__pyx_ptype_8pyoffice_9py_office_CyOffice
+#define __pyx_ptype_13pylibreoffice_9py_office_CyOffice __pyx_mstate_global->__pyx_ptype_13pylibreoffice_9py_office_CyOffice
 #define __pyx_n_s_CyOffice __pyx_mstate_global->__pyx_n_s_CyOffice
 #define __pyx_n_s_CyOffice___reduce_cython __pyx_mstate_global->__pyx_n_s_CyOffice___reduce_cython
 #define __pyx_n_s_CyOffice___setstate_cython __pyx_mstate_global->__pyx_n_s_CyOffice___setstate_cython
@@ -2502,7 +2502,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_asyncio_coroutines __pyx_mstate_global->__pyx_n_s_asyncio_coroutines
 #define __pyx_n_s_bool __pyx_mstate_global->__pyx_n_s_bool
 #define __pyx_n_s_cline_in_traceback __pyx_mstate_global->__pyx_n_s_cline_in_traceback
-#define __pyx_kp_s_data_work_office_converter_pyof __pyx_mstate_global->__pyx_kp_s_data_work_office_converter_pyof
+#define __pyx_kp_s_data_work_office_converter_pyli __pyx_mstate_global->__pyx_kp_s_data_work_office_converter_pyli
 #define __pyx_kp_u_disable __pyx_mstate_global->__pyx_kp_u_disable
 #define __pyx_kp_u_enable __pyx_mstate_global->__pyx_kp_u_enable
 #define __pyx_kp_u_gc __pyx_mstate_global->__pyx_kp_u_gc
@@ -2517,7 +2517,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_out_format __pyx_mstate_global->__pyx_n_s_out_format
 #define __pyx_n_s_output_file __pyx_mstate_global->__pyx_n_s_output_file
 #define __pyx_n_u_pdf __pyx_mstate_global->__pyx_n_u_pdf
-#define __pyx_n_s_pyoffice_py_office __pyx_mstate_global->__pyx_n_s_pyoffice_py_office
+#define __pyx_n_s_pylibreoffice_py_office __pyx_mstate_global->__pyx_n_s_pylibreoffice_py_office
 #define __pyx_n_s_pyx_state __pyx_mstate_global->__pyx_n_s_pyx_state
 #define __pyx_n_s_reduce __pyx_mstate_global->__pyx_n_s_reduce
 #define __pyx_n_s_reduce_cython __pyx_mstate_global->__pyx_n_s_reduce_cython
@@ -2610,7 +2610,7 @@ static std::string __pyx_convert_string_from_py_6libcpp_6string_std__in_string(P
   return __pyx_r;
 }
 
-/* "pyoffice/py_office.pyx":21
+/* "pylibreoffice/py_office.pyx":21
  *     cdef Office* office  #  C++
  * 
  *     def __cinit__(self, str libreoffice_dir="/usr/lib/libreoffice/program"):             # <<<<<<<<<<<<<<
@@ -2619,8 +2619,8 @@ static std::string __pyx_convert_string_from_py_6libcpp_6string_std__in_string(P
  */
 
 /* Python wrapper */
-static int __pyx_pw_8pyoffice_9py_office_8CyOffice_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_8pyoffice_9py_office_8CyOffice_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_13pylibreoffice_9py_office_8CyOffice_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_13pylibreoffice_9py_office_8CyOffice_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_libreoffice_dir = 0;
   CYTHON_UNUSED Py_ssize_t __pyx_nargs;
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
@@ -2683,12 +2683,12 @@ static int __pyx_pw_8pyoffice_9py_office_8CyOffice_1__cinit__(PyObject *__pyx_v_
       __Pyx_Arg_XDECREF_VARARGS(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("pyoffice.py_office.CyOffice.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pylibreoffice.py_office.CyOffice.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_libreoffice_dir), (&PyUnicode_Type), 1, "libreoffice_dir", 1))) __PYX_ERR(1, 21, __pyx_L1_error)
-  __pyx_r = __pyx_pf_8pyoffice_9py_office_8CyOffice___cinit__(((struct __pyx_obj_8pyoffice_9py_office_CyOffice *)__pyx_v_self), __pyx_v_libreoffice_dir);
+  __pyx_r = __pyx_pf_13pylibreoffice_9py_office_8CyOffice___cinit__(((struct __pyx_obj_13pylibreoffice_9py_office_CyOffice *)__pyx_v_self), __pyx_v_libreoffice_dir);
 
   /* function exit code */
   goto __pyx_L0;
@@ -2705,14 +2705,14 @@ static int __pyx_pw_8pyoffice_9py_office_8CyOffice_1__cinit__(PyObject *__pyx_v_
   return __pyx_r;
 }
 
-static int __pyx_pf_8pyoffice_9py_office_8CyOffice___cinit__(struct __pyx_obj_8pyoffice_9py_office_CyOffice *__pyx_v_self, PyObject *__pyx_v_libreoffice_dir) {
+static int __pyx_pf_13pylibreoffice_9py_office_8CyOffice___cinit__(struct __pyx_obj_13pylibreoffice_9py_office_CyOffice *__pyx_v_self, PyObject *__pyx_v_libreoffice_dir) {
   int __pyx_r;
   std::string __pyx_t_1;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
 
-  /* "pyoffice/py_office.pyx":22
+  /* "pylibreoffice/py_office.pyx":22
  * 
  *     def __cinit__(self, str libreoffice_dir="/usr/lib/libreoffice/program"):
  *         self.office = new Office(libreoffice_dir)             # <<<<<<<<<<<<<<
@@ -2722,7 +2722,7 @@ static int __pyx_pf_8pyoffice_9py_office_8CyOffice___cinit__(struct __pyx_obj_8p
   __pyx_t_1 = __pyx_convert_string_from_py_6libcpp_6string_std__in_string(__pyx_v_libreoffice_dir); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 22, __pyx_L1_error)
   __pyx_v_self->office = new office::Office(__pyx_t_1);
 
-  /* "pyoffice/py_office.pyx":21
+  /* "pylibreoffice/py_office.pyx":21
  *     cdef Office* office  #  C++
  * 
  *     def __cinit__(self, str libreoffice_dir="/usr/lib/libreoffice/program"):             # <<<<<<<<<<<<<<
@@ -2734,13 +2734,13 @@ static int __pyx_pf_8pyoffice_9py_office_8CyOffice___cinit__(struct __pyx_obj_8p
   __pyx_r = 0;
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_AddTraceback("pyoffice.py_office.CyOffice.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pylibreoffice.py_office.CyOffice.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   return __pyx_r;
 }
 
-/* "pyoffice/py_office.pyx":24
+/* "pylibreoffice/py_office.pyx":24
  *         self.office = new Office(libreoffice_dir)
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -2749,22 +2749,22 @@ static int __pyx_pf_8pyoffice_9py_office_8CyOffice___cinit__(struct __pyx_obj_8p
  */
 
 /* Python wrapper */
-static void __pyx_pw_8pyoffice_9py_office_8CyOffice_3__dealloc__(PyObject *__pyx_v_self); /*proto*/
-static void __pyx_pw_8pyoffice_9py_office_8CyOffice_3__dealloc__(PyObject *__pyx_v_self) {
+static void __pyx_pw_13pylibreoffice_9py_office_8CyOffice_3__dealloc__(PyObject *__pyx_v_self); /*proto*/
+static void __pyx_pw_13pylibreoffice_9py_office_8CyOffice_3__dealloc__(PyObject *__pyx_v_self) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__dealloc__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_pf_8pyoffice_9py_office_8CyOffice_2__dealloc__(((struct __pyx_obj_8pyoffice_9py_office_CyOffice *)__pyx_v_self));
+  __pyx_pf_13pylibreoffice_9py_office_8CyOffice_2__dealloc__(((struct __pyx_obj_13pylibreoffice_9py_office_CyOffice *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
 }
 
-static void __pyx_pf_8pyoffice_9py_office_8CyOffice_2__dealloc__(struct __pyx_obj_8pyoffice_9py_office_CyOffice *__pyx_v_self) {
+static void __pyx_pf_13pylibreoffice_9py_office_8CyOffice_2__dealloc__(struct __pyx_obj_13pylibreoffice_9py_office_CyOffice *__pyx_v_self) {
   int __pyx_t_1;
 
-  /* "pyoffice/py_office.pyx":25
+  /* "pylibreoffice/py_office.pyx":25
  * 
  *     def __dealloc__(self):
  *         if self.office is not NULL:             # <<<<<<<<<<<<<<
@@ -2774,7 +2774,7 @@ static void __pyx_pf_8pyoffice_9py_office_8CyOffice_2__dealloc__(struct __pyx_ob
   __pyx_t_1 = (__pyx_v_self->office != NULL);
   if (__pyx_t_1) {
 
-    /* "pyoffice/py_office.pyx":26
+    /* "pylibreoffice/py_office.pyx":26
  *     def __dealloc__(self):
  *         if self.office is not NULL:
  *             del self.office             # <<<<<<<<<<<<<<
@@ -2783,7 +2783,7 @@ static void __pyx_pf_8pyoffice_9py_office_8CyOffice_2__dealloc__(struct __pyx_ob
  */
     delete __pyx_v_self->office;
 
-    /* "pyoffice/py_office.pyx":27
+    /* "pylibreoffice/py_office.pyx":27
  *         if self.office is not NULL:
  *             del self.office
  *             self.office = NULL             # <<<<<<<<<<<<<<
@@ -2792,7 +2792,7 @@ static void __pyx_pf_8pyoffice_9py_office_8CyOffice_2__dealloc__(struct __pyx_ob
  */
     __pyx_v_self->office = NULL;
 
-    /* "pyoffice/py_office.pyx":25
+    /* "pylibreoffice/py_office.pyx":25
  * 
  *     def __dealloc__(self):
  *         if self.office is not NULL:             # <<<<<<<<<<<<<<
@@ -2801,7 +2801,7 @@ static void __pyx_pf_8pyoffice_9py_office_8CyOffice_2__dealloc__(struct __pyx_ob
  */
   }
 
-  /* "pyoffice/py_office.pyx":24
+  /* "pylibreoffice/py_office.pyx":24
  *         self.office = new Office(libreoffice_dir)
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -2812,7 +2812,7 @@ static void __pyx_pf_8pyoffice_9py_office_8CyOffice_2__dealloc__(struct __pyx_ob
   /* function exit code */
 }
 
-/* "pyoffice/py_office.pyx":29
+/* "pylibreoffice/py_office.pyx":29
  *             self.office = NULL
  * 
  *     def save_as(self, str input_file, str output_file, out_format="pdf")->bool:             # <<<<<<<<<<<<<<
@@ -2821,15 +2821,15 @@ static void __pyx_pf_8pyoffice_9py_office_8CyOffice_2__dealloc__(struct __pyx_ob
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8pyoffice_9py_office_8CyOffice_5save_as(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_13pylibreoffice_9py_office_8CyOffice_5save_as(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_8pyoffice_9py_office_8CyOffice_5save_as = {"save_as", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8pyoffice_9py_office_8CyOffice_5save_as, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_8pyoffice_9py_office_8CyOffice_5save_as(PyObject *__pyx_v_self, 
+static PyMethodDef __pyx_mdef_13pylibreoffice_9py_office_8CyOffice_5save_as = {"save_as", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_13pylibreoffice_9py_office_8CyOffice_5save_as, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_13pylibreoffice_9py_office_8CyOffice_5save_as(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -2930,13 +2930,13 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("pyoffice.py_office.CyOffice.save_as", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pylibreoffice.py_office.CyOffice.save_as", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_input_file), (&PyUnicode_Type), 1, "input_file", 1))) __PYX_ERR(1, 29, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_output_file), (&PyUnicode_Type), 1, "output_file", 1))) __PYX_ERR(1, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_8pyoffice_9py_office_8CyOffice_4save_as(((struct __pyx_obj_8pyoffice_9py_office_CyOffice *)__pyx_v_self), __pyx_v_input_file, __pyx_v_output_file, __pyx_v_out_format);
+  __pyx_r = __pyx_pf_13pylibreoffice_9py_office_8CyOffice_4save_as(((struct __pyx_obj_13pylibreoffice_9py_office_CyOffice *)__pyx_v_self), __pyx_v_input_file, __pyx_v_output_file, __pyx_v_out_format);
 
   /* function exit code */
   goto __pyx_L0;
@@ -2953,7 +2953,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8pyoffice_9py_office_8CyOffice_4save_as(struct __pyx_obj_8pyoffice_9py_office_CyOffice *__pyx_v_self, PyObject *__pyx_v_input_file, PyObject *__pyx_v_output_file, PyObject *__pyx_v_out_format) {
+static PyObject *__pyx_pf_13pylibreoffice_9py_office_8CyOffice_4save_as(struct __pyx_obj_13pylibreoffice_9py_office_CyOffice *__pyx_v_self, PyObject *__pyx_v_input_file, PyObject *__pyx_v_output_file, PyObject *__pyx_v_out_format) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   std::string __pyx_t_1;
@@ -2965,7 +2965,7 @@ static PyObject *__pyx_pf_8pyoffice_9py_office_8CyOffice_4save_as(struct __pyx_o
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("save_as", 1);
 
-  /* "pyoffice/py_office.pyx":30
+  /* "pylibreoffice/py_office.pyx":30
  * 
  *     def save_as(self, str input_file, str output_file, out_format="pdf")->bool:
  *         return self.office.saveAs(input_file, output_file, out_format)             # <<<<<<<<<<<<<<
@@ -2982,7 +2982,7 @@ static PyObject *__pyx_pf_8pyoffice_9py_office_8CyOffice_4save_as(struct __pyx_o
   __pyx_t_4 = 0;
   goto __pyx_L0;
 
-  /* "pyoffice/py_office.pyx":29
+  /* "pylibreoffice/py_office.pyx":29
  *             self.office = NULL
  * 
  *     def save_as(self, str input_file, str output_file, out_format="pdf")->bool:             # <<<<<<<<<<<<<<
@@ -2993,7 +2993,7 @@ static PyObject *__pyx_pf_8pyoffice_9py_office_8CyOffice_4save_as(struct __pyx_o
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("pyoffice.py_office.CyOffice.save_as", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pylibreoffice.py_office.CyOffice.save_as", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3001,7 +3001,7 @@ static PyObject *__pyx_pf_8pyoffice_9py_office_8CyOffice_4save_as(struct __pyx_o
   return __pyx_r;
 }
 
-/* "pyoffice/py_office.pyx":31
+/* "pylibreoffice/py_office.pyx":31
  *     def save_as(self, str input_file, str output_file, out_format="pdf")->bool:
  *         return self.office.saveAs(input_file, output_file, out_format)
  *     def release(self):             # <<<<<<<<<<<<<<
@@ -3009,15 +3009,15 @@ static PyObject *__pyx_pf_8pyoffice_9py_office_8CyOffice_4save_as(struct __pyx_o
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8pyoffice_9py_office_8CyOffice_7release(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_13pylibreoffice_9py_office_8CyOffice_7release(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_8pyoffice_9py_office_8CyOffice_7release = {"release", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8pyoffice_9py_office_8CyOffice_7release, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_8pyoffice_9py_office_8CyOffice_7release(PyObject *__pyx_v_self, 
+static PyMethodDef __pyx_mdef_13pylibreoffice_9py_office_8CyOffice_7release = {"release", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_13pylibreoffice_9py_office_8CyOffice_7release, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_13pylibreoffice_9py_office_8CyOffice_7release(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -3042,26 +3042,26 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   if (unlikely(__pyx_nargs > 0)) {
     __Pyx_RaiseArgtupleInvalid("release", 1, 0, 0, __pyx_nargs); return NULL;}
   if (unlikely(__pyx_kwds) && __Pyx_NumKwargs_FASTCALL(__pyx_kwds) && unlikely(!__Pyx_CheckKeywordStrings(__pyx_kwds, "release", 0))) return NULL;
-  __pyx_r = __pyx_pf_8pyoffice_9py_office_8CyOffice_6release(((struct __pyx_obj_8pyoffice_9py_office_CyOffice *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13pylibreoffice_9py_office_8CyOffice_6release(((struct __pyx_obj_13pylibreoffice_9py_office_CyOffice *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8pyoffice_9py_office_8CyOffice_6release(struct __pyx_obj_8pyoffice_9py_office_CyOffice *__pyx_v_self) {
+static PyObject *__pyx_pf_13pylibreoffice_9py_office_8CyOffice_6release(struct __pyx_obj_13pylibreoffice_9py_office_CyOffice *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("release", 1);
 
-  /* "pyoffice/py_office.pyx":32
+  /* "pylibreoffice/py_office.pyx":32
  *         return self.office.saveAs(input_file, output_file, out_format)
  *     def release(self):
  *         self.office.release()             # <<<<<<<<<<<<<<
  */
   (void)(__pyx_v_self->office->release());
 
-  /* "pyoffice/py_office.pyx":31
+  /* "pylibreoffice/py_office.pyx":31
  *     def save_as(self, str input_file, str output_file, out_format="pdf")->bool:
  *         return self.office.saveAs(input_file, output_file, out_format)
  *     def release(self):             # <<<<<<<<<<<<<<
@@ -3082,15 +3082,15 @@ static PyObject *__pyx_pf_8pyoffice_9py_office_8CyOffice_6release(struct __pyx_o
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8pyoffice_9py_office_8CyOffice_9__reduce_cython__(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_13pylibreoffice_9py_office_8CyOffice_9__reduce_cython__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_8pyoffice_9py_office_8CyOffice_9__reduce_cython__ = {"__reduce_cython__", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8pyoffice_9py_office_8CyOffice_9__reduce_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_8pyoffice_9py_office_8CyOffice_9__reduce_cython__(PyObject *__pyx_v_self, 
+static PyMethodDef __pyx_mdef_13pylibreoffice_9py_office_8CyOffice_9__reduce_cython__ = {"__reduce_cython__", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_13pylibreoffice_9py_office_8CyOffice_9__reduce_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_13pylibreoffice_9py_office_8CyOffice_9__reduce_cython__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -3115,14 +3115,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   if (unlikely(__pyx_nargs > 0)) {
     __Pyx_RaiseArgtupleInvalid("__reduce_cython__", 1, 0, 0, __pyx_nargs); return NULL;}
   if (unlikely(__pyx_kwds) && __Pyx_NumKwargs_FASTCALL(__pyx_kwds) && unlikely(!__Pyx_CheckKeywordStrings(__pyx_kwds, "__reduce_cython__", 0))) return NULL;
-  __pyx_r = __pyx_pf_8pyoffice_9py_office_8CyOffice_8__reduce_cython__(((struct __pyx_obj_8pyoffice_9py_office_CyOffice *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13pylibreoffice_9py_office_8CyOffice_8__reduce_cython__(((struct __pyx_obj_13pylibreoffice_9py_office_CyOffice *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8pyoffice_9py_office_8CyOffice_8__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_8pyoffice_9py_office_CyOffice *__pyx_v_self) {
+static PyObject *__pyx_pf_13pylibreoffice_9py_office_8CyOffice_8__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_13pylibreoffice_9py_office_CyOffice *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_lineno = 0;
@@ -3147,7 +3147,7 @@ static PyObject *__pyx_pf_8pyoffice_9py_office_8CyOffice_8__reduce_cython__(CYTH
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("pyoffice.py_office.CyOffice.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pylibreoffice.py_office.CyOffice.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -3162,15 +3162,15 @@ static PyObject *__pyx_pf_8pyoffice_9py_office_8CyOffice_8__reduce_cython__(CYTH
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_8pyoffice_9py_office_8CyOffice_11__setstate_cython__(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_13pylibreoffice_9py_office_8CyOffice_11__setstate_cython__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_8pyoffice_9py_office_8CyOffice_11__setstate_cython__ = {"__setstate_cython__", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8pyoffice_9py_office_8CyOffice_11__setstate_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_8pyoffice_9py_office_8CyOffice_11__setstate_cython__(PyObject *__pyx_v_self, 
+static PyMethodDef __pyx_mdef_13pylibreoffice_9py_office_8CyOffice_11__setstate_cython__ = {"__setstate_cython__", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_13pylibreoffice_9py_office_8CyOffice_11__setstate_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_13pylibreoffice_9py_office_8CyOffice_11__setstate_cython__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -3240,11 +3240,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("pyoffice.py_office.CyOffice.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pylibreoffice.py_office.CyOffice.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_8pyoffice_9py_office_8CyOffice_10__setstate_cython__(((struct __pyx_obj_8pyoffice_9py_office_CyOffice *)__pyx_v_self), __pyx_v___pyx_state);
+  __pyx_r = __pyx_pf_13pylibreoffice_9py_office_8CyOffice_10__setstate_cython__(((struct __pyx_obj_13pylibreoffice_9py_office_CyOffice *)__pyx_v_self), __pyx_v___pyx_state);
 
   /* function exit code */
   {
@@ -3257,7 +3257,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_8pyoffice_9py_office_8CyOffice_10__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_8pyoffice_9py_office_CyOffice *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_13pylibreoffice_9py_office_8CyOffice_10__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_13pylibreoffice_9py_office_CyOffice *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_lineno = 0;
@@ -3282,14 +3282,14 @@ static PyObject *__pyx_pf_8pyoffice_9py_office_8CyOffice_10__setstate_cython__(C
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("pyoffice.py_office.CyOffice.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pylibreoffice.py_office.CyOffice.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_tp_new_8pyoffice_9py_office_CyOffice(PyTypeObject *t, PyObject *a, PyObject *k) {
+static PyObject *__pyx_tp_new_13pylibreoffice_9py_office_CyOffice(PyTypeObject *t, PyObject *a, PyObject *k) {
   PyObject *o;
   #if CYTHON_COMPILING_IN_LIMITED_API
   allocfunc alloc_func = (allocfunc)PyType_GetSlot(t, Py_tp_alloc);
@@ -3302,17 +3302,17 @@ static PyObject *__pyx_tp_new_8pyoffice_9py_office_CyOffice(PyTypeObject *t, PyO
   }
   if (unlikely(!o)) return 0;
   #endif
-  if (unlikely(__pyx_pw_8pyoffice_9py_office_8CyOffice_1__cinit__(o, a, k) < 0)) goto bad;
+  if (unlikely(__pyx_pw_13pylibreoffice_9py_office_8CyOffice_1__cinit__(o, a, k) < 0)) goto bad;
   return o;
   bad:
   Py_DECREF(o); o = 0;
   return NULL;
 }
 
-static void __pyx_tp_dealloc_8pyoffice_9py_office_CyOffice(PyObject *o) {
+static void __pyx_tp_dealloc_13pylibreoffice_9py_office_CyOffice(PyObject *o) {
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely((PY_VERSION_HEX >= 0x03080000 || __Pyx_PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE)) && __Pyx_PyObject_GetSlot(o, tp_finalize, destructor)) && (!PyType_IS_GC(Py_TYPE(o)) || !__Pyx_PyObject_GC_IsFinalized(o))) {
-    if (__Pyx_PyObject_GetSlot(o, tp_dealloc, destructor) == __pyx_tp_dealloc_8pyoffice_9py_office_CyOffice) {
+    if (__Pyx_PyObject_GetSlot(o, tp_dealloc, destructor) == __pyx_tp_dealloc_13pylibreoffice_9py_office_CyOffice) {
       if (PyObject_CallFinalizerFromDealloc(o)) return;
     }
   }
@@ -3321,7 +3321,7 @@ static void __pyx_tp_dealloc_8pyoffice_9py_office_CyOffice(PyObject *o) {
     PyObject *etype, *eval, *etb;
     PyErr_Fetch(&etype, &eval, &etb);
     __Pyx_SET_REFCNT(o, Py_REFCNT(o) + 1);
-    __pyx_pw_8pyoffice_9py_office_8CyOffice_3__dealloc__(o);
+    __pyx_pw_13pylibreoffice_9py_office_8CyOffice_3__dealloc__(o);
     __Pyx_SET_REFCNT(o, Py_REFCNT(o) - 1);
     PyErr_Restore(etype, eval, etb);
   }
@@ -3335,35 +3335,35 @@ static void __pyx_tp_dealloc_8pyoffice_9py_office_CyOffice(PyObject *o) {
   #endif
 }
 
-static PyMethodDef __pyx_methods_8pyoffice_9py_office_CyOffice[] = {
-  {"save_as", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8pyoffice_9py_office_8CyOffice_5save_as, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
-  {"release", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8pyoffice_9py_office_8CyOffice_7release, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
-  {"__reduce_cython__", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8pyoffice_9py_office_8CyOffice_9__reduce_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
-  {"__setstate_cython__", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8pyoffice_9py_office_8CyOffice_11__setstate_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
+static PyMethodDef __pyx_methods_13pylibreoffice_9py_office_CyOffice[] = {
+  {"save_as", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_13pylibreoffice_9py_office_8CyOffice_5save_as, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
+  {"release", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_13pylibreoffice_9py_office_8CyOffice_7release, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
+  {"__reduce_cython__", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_13pylibreoffice_9py_office_8CyOffice_9__reduce_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
+  {"__setstate_cython__", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_13pylibreoffice_9py_office_8CyOffice_11__setstate_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
   {0, 0, 0, 0}
 };
 #if CYTHON_USE_TYPE_SPECS
-static PyType_Slot __pyx_type_8pyoffice_9py_office_CyOffice_slots[] = {
-  {Py_tp_dealloc, (void *)__pyx_tp_dealloc_8pyoffice_9py_office_CyOffice},
-  {Py_tp_methods, (void *)__pyx_methods_8pyoffice_9py_office_CyOffice},
-  {Py_tp_new, (void *)__pyx_tp_new_8pyoffice_9py_office_CyOffice},
+static PyType_Slot __pyx_type_13pylibreoffice_9py_office_CyOffice_slots[] = {
+  {Py_tp_dealloc, (void *)__pyx_tp_dealloc_13pylibreoffice_9py_office_CyOffice},
+  {Py_tp_methods, (void *)__pyx_methods_13pylibreoffice_9py_office_CyOffice},
+  {Py_tp_new, (void *)__pyx_tp_new_13pylibreoffice_9py_office_CyOffice},
   {0, 0},
 };
-static PyType_Spec __pyx_type_8pyoffice_9py_office_CyOffice_spec = {
-  "pyoffice.py_office.CyOffice",
-  sizeof(struct __pyx_obj_8pyoffice_9py_office_CyOffice),
+static PyType_Spec __pyx_type_13pylibreoffice_9py_office_CyOffice_spec = {
+  "pylibreoffice.py_office.CyOffice",
+  sizeof(struct __pyx_obj_13pylibreoffice_9py_office_CyOffice),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE,
-  __pyx_type_8pyoffice_9py_office_CyOffice_slots,
+  __pyx_type_13pylibreoffice_9py_office_CyOffice_slots,
 };
 #else
 
-static PyTypeObject __pyx_type_8pyoffice_9py_office_CyOffice = {
+static PyTypeObject __pyx_type_13pylibreoffice_9py_office_CyOffice = {
   PyVarObject_HEAD_INIT(0, 0)
-  "pyoffice.py_office.""CyOffice", /*tp_name*/
-  sizeof(struct __pyx_obj_8pyoffice_9py_office_CyOffice), /*tp_basicsize*/
+  "pylibreoffice.py_office.""CyOffice", /*tp_name*/
+  sizeof(struct __pyx_obj_13pylibreoffice_9py_office_CyOffice), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_8pyoffice_9py_office_CyOffice, /*tp_dealloc*/
+  __pyx_tp_dealloc_13pylibreoffice_9py_office_CyOffice, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -3396,7 +3396,7 @@ static PyTypeObject __pyx_type_8pyoffice_9py_office_CyOffice = {
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_8pyoffice_9py_office_CyOffice, /*tp_methods*/
+  __pyx_methods_13pylibreoffice_9py_office_CyOffice, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -3408,7 +3408,7 @@ static PyTypeObject __pyx_type_8pyoffice_9py_office_CyOffice = {
   #endif
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_8pyoffice_9py_office_CyOffice, /*tp_new*/
+  __pyx_tp_new_13pylibreoffice_9py_office_CyOffice, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -3469,7 +3469,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_asyncio_coroutines, __pyx_k_asyncio_coroutines, sizeof(__pyx_k_asyncio_coroutines), 0, 0, 1, 1},
     {&__pyx_n_s_bool, __pyx_k_bool, sizeof(__pyx_k_bool), 0, 0, 1, 1},
     {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
-    {&__pyx_kp_s_data_work_office_converter_pyof, __pyx_k_data_work_office_converter_pyof, sizeof(__pyx_k_data_work_office_converter_pyof), 0, 0, 1, 0},
+    {&__pyx_kp_s_data_work_office_converter_pyli, __pyx_k_data_work_office_converter_pyli, sizeof(__pyx_k_data_work_office_converter_pyli), 0, 0, 1, 0},
     {&__pyx_kp_u_disable, __pyx_k_disable, sizeof(__pyx_k_disable), 0, 1, 0, 0},
     {&__pyx_kp_u_enable, __pyx_k_enable, sizeof(__pyx_k_enable), 0, 1, 0, 0},
     {&__pyx_kp_u_gc, __pyx_k_gc, sizeof(__pyx_k_gc), 0, 1, 0, 0},
@@ -3484,7 +3484,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_out_format, __pyx_k_out_format, sizeof(__pyx_k_out_format), 0, 0, 1, 1},
     {&__pyx_n_s_output_file, __pyx_k_output_file, sizeof(__pyx_k_output_file), 0, 0, 1, 1},
     {&__pyx_n_u_pdf, __pyx_k_pdf, sizeof(__pyx_k_pdf), 0, 1, 0, 1},
-    {&__pyx_n_s_pyoffice_py_office, __pyx_k_pyoffice_py_office, sizeof(__pyx_k_pyoffice_py_office), 0, 0, 1, 1},
+    {&__pyx_n_s_pylibreoffice_py_office, __pyx_k_pylibreoffice_py_office, sizeof(__pyx_k_pylibreoffice_py_office), 0, 0, 1, 1},
     {&__pyx_n_s_pyx_state, __pyx_k_pyx_state, sizeof(__pyx_k_pyx_state), 0, 0, 1, 1},
     {&__pyx_n_s_reduce, __pyx_k_reduce, sizeof(__pyx_k_reduce), 0, 0, 1, 1},
     {&__pyx_n_s_reduce_cython, __pyx_k_reduce_cython, sizeof(__pyx_k_reduce_cython), 0, 0, 1, 1},
@@ -3515,7 +3515,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "pyoffice/py_office.pyx":29
+  /* "pylibreoffice/py_office.pyx":29
  *             self.office = NULL
  * 
  *     def save_as(self, str input_file, str output_file, out_format="pdf")->bool:             # <<<<<<<<<<<<<<
@@ -3525,12 +3525,12 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple_ = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_input_file, __pyx_n_s_output_file, __pyx_n_s_out_format); if (unlikely(!__pyx_tuple_)) __PYX_ERR(1, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
-  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_data_work_office_converter_pyof, __pyx_n_s_save_as, 29, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(1, 29, __pyx_L1_error)
+  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_data_work_office_converter_pyli, __pyx_n_s_save_as, 29, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(1, 29, __pyx_L1_error)
   __pyx_tuple__3 = PyTuple_Pack(1, __pyx_n_u_pdf); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(1, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
 
-  /* "pyoffice/py_office.pyx":31
+  /* "pylibreoffice/py_office.pyx":31
  *     def save_as(self, str input_file, str output_file, out_format="pdf")->bool:
  *         return self.office.saveAs(input_file, output_file, out_format)
  *     def release(self):             # <<<<<<<<<<<<<<
@@ -3539,7 +3539,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__4 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(1, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
-  __pyx_codeobj__5 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__4, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_data_work_office_converter_pyof, __pyx_n_s_release, 31, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__5)) __PYX_ERR(1, 31, __pyx_L1_error)
+  __pyx_codeobj__5 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__4, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_data_work_office_converter_pyli, __pyx_n_s_release, 31, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__5)) __PYX_ERR(1, 31, __pyx_L1_error)
 
   /* "(tree fragment)":1
  * def __reduce_cython__(self):             # <<<<<<<<<<<<<<
@@ -3619,27 +3619,27 @@ static int __Pyx_modinit_type_init_code(void) {
   __Pyx_RefNannySetupContext("__Pyx_modinit_type_init_code", 0);
   /*--- Type init code ---*/
   #if CYTHON_USE_TYPE_SPECS
-  __pyx_ptype_8pyoffice_9py_office_CyOffice = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_8pyoffice_9py_office_CyOffice_spec, NULL); if (unlikely(!__pyx_ptype_8pyoffice_9py_office_CyOffice)) __PYX_ERR(1, 18, __pyx_L1_error)
-  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_8pyoffice_9py_office_CyOffice_spec, __pyx_ptype_8pyoffice_9py_office_CyOffice) < 0) __PYX_ERR(1, 18, __pyx_L1_error)
+  __pyx_ptype_13pylibreoffice_9py_office_CyOffice = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_13pylibreoffice_9py_office_CyOffice_spec, NULL); if (unlikely(!__pyx_ptype_13pylibreoffice_9py_office_CyOffice)) __PYX_ERR(1, 18, __pyx_L1_error)
+  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_13pylibreoffice_9py_office_CyOffice_spec, __pyx_ptype_13pylibreoffice_9py_office_CyOffice) < 0) __PYX_ERR(1, 18, __pyx_L1_error)
   #else
-  __pyx_ptype_8pyoffice_9py_office_CyOffice = &__pyx_type_8pyoffice_9py_office_CyOffice;
+  __pyx_ptype_13pylibreoffice_9py_office_CyOffice = &__pyx_type_13pylibreoffice_9py_office_CyOffice;
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
   #endif
   #if !CYTHON_USE_TYPE_SPECS
-  if (__Pyx_PyType_Ready(__pyx_ptype_8pyoffice_9py_office_CyOffice) < 0) __PYX_ERR(1, 18, __pyx_L1_error)
+  if (__Pyx_PyType_Ready(__pyx_ptype_13pylibreoffice_9py_office_CyOffice) < 0) __PYX_ERR(1, 18, __pyx_L1_error)
   #endif
   #if PY_MAJOR_VERSION < 3
-  __pyx_ptype_8pyoffice_9py_office_CyOffice->tp_print = 0;
+  __pyx_ptype_13pylibreoffice_9py_office_CyOffice->tp_print = 0;
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_ptype_8pyoffice_9py_office_CyOffice->tp_dictoffset && __pyx_ptype_8pyoffice_9py_office_CyOffice->tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_ptype_8pyoffice_9py_office_CyOffice->tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_ptype_13pylibreoffice_9py_office_CyOffice->tp_dictoffset && __pyx_ptype_13pylibreoffice_9py_office_CyOffice->tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_ptype_13pylibreoffice_9py_office_CyOffice->tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
   #endif
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_CyOffice, (PyObject *) __pyx_ptype_8pyoffice_9py_office_CyOffice) < 0) __PYX_ERR(1, 18, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_CyOffice, (PyObject *) __pyx_ptype_13pylibreoffice_9py_office_CyOffice) < 0) __PYX_ERR(1, 18, __pyx_L1_error)
   #if !CYTHON_COMPILING_IN_LIMITED_API
-  if (__Pyx_setup_reduce((PyObject *) __pyx_ptype_8pyoffice_9py_office_CyOffice) < 0) __PYX_ERR(1, 18, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject *) __pyx_ptype_13pylibreoffice_9py_office_CyOffice) < 0) __PYX_ERR(1, 18, __pyx_L1_error)
   #endif
   __Pyx_RefNannyFinishContext();
   return 0;
@@ -3923,14 +3923,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_pyoffice__py_office) {
+  if (__pyx_module_is_main_pylibreoffice__py_office) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name, __pyx_n_s_main) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(1, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "pyoffice.py_office")) {
-      if (unlikely((PyDict_SetItemString(modules, "pyoffice.py_office", __pyx_m) < 0))) __PYX_ERR(1, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "pylibreoffice.py_office")) {
+      if (unlikely((PyDict_SetItemString(modules, "pylibreoffice.py_office", __pyx_m) < 0))) __PYX_ERR(1, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -3951,7 +3951,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   #endif
 
-  /* "pyoffice/py_office.pyx":29
+  /* "pylibreoffice/py_office.pyx":29
  *             self.office = NULL
  * 
  *     def save_as(self, str input_file, str output_file, out_format="pdf")->bool:             # <<<<<<<<<<<<<<
@@ -3961,33 +3961,33 @@ if (!__Pyx_RefNanny) {
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_return, __pyx_n_s_bool) < 0) __PYX_ERR(1, 29, __pyx_L1_error)
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8pyoffice_9py_office_8CyOffice_5save_as, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_CyOffice_save_as, NULL, __pyx_n_s_pyoffice_py_office, __pyx_d, ((PyObject *)__pyx_codeobj__2)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 29, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_13pylibreoffice_9py_office_8CyOffice_5save_as, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_CyOffice_save_as, NULL, __pyx_n_s_pylibreoffice_py_office, __pyx_d, ((PyObject *)__pyx_codeobj__2)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_3, __pyx_tuple__3);
   __Pyx_CyFunction_SetAnnotationsDict(__pyx_t_3, __pyx_t_2);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (__Pyx_SetItemOnTypeDict((PyObject *)__pyx_ptype_8pyoffice_9py_office_CyOffice, __pyx_n_s_save_as, __pyx_t_3) < 0) __PYX_ERR(1, 29, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict((PyObject *)__pyx_ptype_13pylibreoffice_9py_office_CyOffice, __pyx_n_s_save_as, __pyx_t_3) < 0) __PYX_ERR(1, 29, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  PyType_Modified(__pyx_ptype_8pyoffice_9py_office_CyOffice);
+  PyType_Modified(__pyx_ptype_13pylibreoffice_9py_office_CyOffice);
 
-  /* "pyoffice/py_office.pyx":31
+  /* "pylibreoffice/py_office.pyx":31
  *     def save_as(self, str input_file, str output_file, out_format="pdf")->bool:
  *         return self.office.saveAs(input_file, output_file, out_format)
  *     def release(self):             # <<<<<<<<<<<<<<
  *         self.office.release()
  */
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8pyoffice_9py_office_8CyOffice_7release, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_CyOffice_release, NULL, __pyx_n_s_pyoffice_py_office, __pyx_d, ((PyObject *)__pyx_codeobj__5)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 31, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_13pylibreoffice_9py_office_8CyOffice_7release, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_CyOffice_release, NULL, __pyx_n_s_pylibreoffice_py_office, __pyx_d, ((PyObject *)__pyx_codeobj__5)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (__Pyx_SetItemOnTypeDict((PyObject *)__pyx_ptype_8pyoffice_9py_office_CyOffice, __pyx_n_s_release, __pyx_t_3) < 0) __PYX_ERR(1, 31, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict((PyObject *)__pyx_ptype_13pylibreoffice_9py_office_CyOffice, __pyx_n_s_release, __pyx_t_3) < 0) __PYX_ERR(1, 31, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  PyType_Modified(__pyx_ptype_8pyoffice_9py_office_CyOffice);
+  PyType_Modified(__pyx_ptype_13pylibreoffice_9py_office_CyOffice);
 
   /* "(tree fragment)":1
  * def __reduce_cython__(self):             # <<<<<<<<<<<<<<
  *     raise TypeError, "no default __reduce__ due to non-trivial __cinit__"
  * def __setstate_cython__(self, __pyx_state):
  */
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8pyoffice_9py_office_8CyOffice_9__reduce_cython__, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_CyOffice___reduce_cython, NULL, __pyx_n_s_pyoffice_py_office, __pyx_d, ((PyObject *)__pyx_codeobj__6)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_13pylibreoffice_9py_office_8CyOffice_9__reduce_cython__, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_CyOffice___reduce_cython, NULL, __pyx_n_s_pylibreoffice_py_office, __pyx_d, ((PyObject *)__pyx_codeobj__6)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_reduce_cython, __pyx_t_3) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -3998,12 +3998,12 @@ if (!__Pyx_RefNanny) {
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     raise TypeError, "no default __reduce__ due to non-trivial __cinit__"
  */
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8pyoffice_9py_office_8CyOffice_11__setstate_cython__, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_CyOffice___setstate_cython, NULL, __pyx_n_s_pyoffice_py_office, __pyx_d, ((PyObject *)__pyx_codeobj__8)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 3, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_13pylibreoffice_9py_office_8CyOffice_11__setstate_cython__, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_CyOffice___setstate_cython, NULL, __pyx_n_s_pylibreoffice_py_office, __pyx_d, ((PyObject *)__pyx_codeobj__8)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_setstate_cython, __pyx_t_3) < 0) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "pyoffice/py_office.pyx":1
+  /* "pylibreoffice/py_office.pyx":1
  * # cython: language_level=3             # <<<<<<<<<<<<<<
  * # distutils: sources = src/office.cxx
  * # py_office.pyx
@@ -4021,7 +4021,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_3);
   if (__pyx_m) {
     if (__pyx_d && stringtab_initialized) {
-      __Pyx_AddTraceback("init pyoffice.py_office", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init pylibreoffice.py_office", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     #if !CYTHON_USE_MODULE_STATE
     Py_CLEAR(__pyx_m);
@@ -4035,7 +4035,7 @@ if (!__Pyx_RefNanny) {
     }
     #endif
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init pyoffice.py_office");
+    PyErr_SetString(PyExc_ImportError, "init pylibreoffice.py_office");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
