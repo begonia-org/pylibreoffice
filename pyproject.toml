@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pylibreoffice"
-version = "0.1.1.dev04"
+version = "0.1.1.post1"
 description = "A Python library for handling Microsoft Office documents, built with [LibreOfficeKit](https://docs.libreoffice.org/libreofficekit.html)."
 authors = ["vforfreedom <vforfreedom96@gmail.com>"]
 readme = "README.md"
@@ -25,18 +25,23 @@ scikit-build = "^0.18.1"
 
 [project]
 name = "pylibreoffice"
-version = "0.1.1.dev04"
+version = "0.1.1.post1"
 description = "A Python library for handling Microsoft Office documents, built with [LibreOfficeKit](https://docs.libreoffice.org/libreofficekit.html)."
 authors = [    { name = "vforfreedom", email = "vforfreedom96@gmail.com" }
 ]
+keywords = ["egg", "office", "libreoffice", "libreofficekit", "cython", "pybind11"]
+dependencies = [
+"Cython",
+"pybind11"
+]
+
 readme = "README.md"
 [project.urls]
 url = "https://github.com/begonia-org/pylibreoffice"
-"Home Page" = "https://github.com/begonia-org/pylibreoffice"
-Homepage = "https://github.com/begonia-org/pylibreoffice"
-Issues = "https://github.com/begonia-org/pylibreoffice/issues"
-Documentation = "https://github.com/begonia-org/pylibreoffice"
-Repository = "https://github.com/begonia-org/pylibreoffice.git"
+homepage = "https://github.com/begonia-org/pylibreoffice"
+issues = "https://github.com/begonia-org/pylibreoffice/issues"
+documentation = "https://github.com/begonia-org/pylibreoffice"
+repository = "https://github.com/begonia-org/pylibreoffice.git"
 [tool.poetry.dependencies]
 python = "^3.10"
 cython = "^3.0.11"
