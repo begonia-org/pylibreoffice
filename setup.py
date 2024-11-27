@@ -29,7 +29,7 @@ def main():
     ]
     setup(
         name="pylibreoffice",
-        version="0.1.1.post1",
+        version="0.1.1.post4",
         author="vforfreedom",
         url="https://github.com/begonia-org/pylibreoffice",
         platforms=["Linux"],
@@ -42,7 +42,7 @@ def main():
         built with [LibreOfficeKit](https://docs.libreoffice.org/libreofficekit.html).",
 
         zip_safe=False,
-        packages=find_packages(),
+        packages=find_packages(exclude=["tests", "tests.*", "*.egg-info", "*.egg-info.*", "__pycache__", "_skbuild"]),
         package_data={
             # 指定要打包的文件
             "pylibreoffice": ["*.pyx", "*.so", "liboffice.so", "**/*.so"],

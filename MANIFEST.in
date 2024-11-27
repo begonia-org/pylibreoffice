@@ -1,6 +1,10 @@
 include CMakeLists.txt
 recursive-include src *.*
-include pylibreoffice/py_office.pyx
+include pylibreoffice/*.pyx
+include pylibreoffice/*.py
 recursive-include pylibreoffice *.*
-include pylibreoffice/*.so
-global-include *.so
+recursive-exculde *.egg-info
+exculde _skbuild
+recursive-include src *.py
+prune _skbuild
+
