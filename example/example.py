@@ -6,7 +6,7 @@
 @Desc    :   
 '''
 
-
+import os
 from pylibreoffice.core import PyOffice
 
 
@@ -17,11 +17,15 @@ class Example:
 
     def doc(self):
         # Convert the doc file to pdf
-        print(self.office.save_as("./test.doc", "./test.pdf", "pdf"))
+        base_path = os.path.dirname(os.path.abspath(__file__))
+
+        print(self.office.save_as(os.path.join(base_path, "test.doc"), os.path.join(base_path, "test.pdf"), "pdf"))
 
     def xls(self):
         # Convert the xls file to pdf
-        print(self.office.save_as("./test.xls", "./test_xls.pdf", "pdf"))
+        base_path = os.path.dirname(os.path.abspath(__file__))
+
+        print(self.office.save_as(os.path.join(base_path, "test.xls"), os.path.join(base_path, "test_xls.pdf"), "pdf"))
 
 
 if __name__ == '__main__':

@@ -41,11 +41,6 @@ include_directories(${LIBREOFFICE_INCLUDE_DIR})
 file(GLOB OFFICE_SRCS "${WORKDIR}/src/*.cxx")
 add_library(office SHARED ${OFFICE_SRCS})
 
-# 安装 office 库
-# install(TARGETS office
-#     LIBRARY DESTINATION lib
-#     ARCHIVE DESTINATION lib
-# )
 
 #################### 编译生成 Cython 模块 ####################
 set(CYTHON_CPP_FILE "${WORKDIR}/src/py_office.cpp")
@@ -61,7 +56,6 @@ add_library(py_office SHARED ${CYTHON_CPP_FILE} ${OFFICE_SRCS})
 set_target_properties(py_office PROPERTIES PREFIX "")
 
 target_include_directories(py_office PRIVATE ${Python3_INCLUDE_DIRS})
-# target_link_libraries(py_office PRIVATE ${Python3_LIBRARIES} office)
 
 
 
@@ -80,6 +74,5 @@ install(TARGETS pyoffice_demo
 find_package(pybind11 REQUIRED)
 pybind11_add_module(pybind11_office src/pybind_office.cpp src/office.cxx)
 
-# target_link_libraries(pybind11_office PRIVATE office)
 
 

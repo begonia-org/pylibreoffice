@@ -37,5 +37,8 @@ RUN python3 -m pip install Cython pybind11 scikit-build && \
     rm -rf /root/.cache/pip && \
     rm -rf /root/.cache && \
     cd ../ && \
-    rm -rf /app
+    cp -r /app/example . && \
+    rm -rf /app && \
+    python3 example/example.py
+
 CMD ["/bin/bash"]

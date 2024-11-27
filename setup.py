@@ -29,7 +29,7 @@ def main():
     ]
     setup(
         name="pylibreoffice",
-        version="0.1.1.dev02",
+        version="0.1.1.dev04",
         author="vforfreedom",
         url="https://github.com/begonia-org/pylibreoffice",
         platforms=["Linux"],
