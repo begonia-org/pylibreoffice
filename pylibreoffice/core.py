@@ -12,7 +12,7 @@ import pylibreoffice.pybind11_office as _pybind11_office  # type: ignore
 
 
 class PyOffice:
-    def __init__(self, libreoffice_dir="ls/program", bridge="pybind11"):
+    def __init__(self, libreoffice_dir="/usr/lib/libreoffice/program", bridge="pybind11"):
         if bridge == "pybind11":
             self.__office = _pybind11_office.Office(libreoffice_dir)
         else:

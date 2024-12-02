@@ -24,9 +24,14 @@ RUN apk update && \
     font-noto-cjk \
     wqy-zenhei \
     supervisor \
+    fontconfig \
     ttf-freefont && \
+    wget https://github.com/adobe-fonts/source-han-sans/releases/download/2.004R/SourceHanSansCN.zip && \
+    unzip SourceHanSansCN.zip -d /usr/share/fonts/ && \
+    fc-cache -f && \
     apk cache clean && \
     rm -rf /var/cache/apk/* && \
+    rm -fr SourceHanSansCN.zip && \
     pip install --upgrade pip
 ADD . app/
 WORKDIR /app

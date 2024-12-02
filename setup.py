@@ -1,8 +1,6 @@
-import logging
 import site
-from skbuild import cmaker, setup
+from skbuild import setup
 from setuptools import find_packages
-import subprocess
 import os
 import sys
 import sysconfig
