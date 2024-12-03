@@ -48,6 +48,11 @@ def main():
         include_package_data=True,  # 启用 MANIFEST.in
         cmake_args=cmake_args,
         cmake_source_dir=".",
+        install_requires=[
+            "cython",
+            "pybind11",
+            "cmake",
+        ]
     )
 
 

@@ -2200,7 +2200,7 @@ static const char __pyx_k_pylibreoffice_py_office[] = "pylibreoffice.py_office";
 static const char __pyx_k_CyOffice___reduce_cython[] = "CyOffice.__reduce_cython__";
 static const char __pyx_k_CyOffice___setstate_cython[] = "CyOffice.__setstate_cython__";
 static const char __pyx_k_usr_lib_libreoffice_program[] = "/usr/lib/libreoffice/program";
-static const char __pyx_k_data_work_office_converter_pyli[] = "/data/work/office-converter/pylibreoffice/py_office.pyx";
+static const char __pyx_k_data_work_pylibreoffice_pylibre[] = "/data/work/pylibreoffice/pylibreoffice/py_office.pyx";
 static const char __pyx_k_no_default___reduce___due_to_non[] = "no default __reduce__ due to non-trivial __cinit__";
 /* #### Code section: decls ### */
 static int __pyx_pf_13pylibreoffice_9py_office_8CyOffice___cinit__(struct __pyx_obj_13pylibreoffice_9py_office_CyOffice *__pyx_v_self, PyObject *__pyx_v_libreoffice_dir); /* proto */
@@ -2257,7 +2257,7 @@ typedef struct {
   PyObject *__pyx_n_s_asyncio_coroutines;
   PyObject *__pyx_n_s_bool;
   PyObject *__pyx_n_s_cline_in_traceback;
-  PyObject *__pyx_kp_s_data_work_office_converter_pyli;
+  PyObject *__pyx_kp_s_data_work_pylibreoffice_pylibre;
   PyObject *__pyx_kp_u_disable;
   PyObject *__pyx_kp_u_enable;
   PyObject *__pyx_kp_u_gc;
@@ -2348,7 +2348,7 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_asyncio_coroutines);
   Py_CLEAR(clear_module_state->__pyx_n_s_bool);
   Py_CLEAR(clear_module_state->__pyx_n_s_cline_in_traceback);
-  Py_CLEAR(clear_module_state->__pyx_kp_s_data_work_office_converter_pyli);
+  Py_CLEAR(clear_module_state->__pyx_kp_s_data_work_pylibreoffice_pylibre);
   Py_CLEAR(clear_module_state->__pyx_kp_u_disable);
   Py_CLEAR(clear_module_state->__pyx_kp_u_enable);
   Py_CLEAR(clear_module_state->__pyx_kp_u_gc);
@@ -2417,7 +2417,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_asyncio_coroutines);
   Py_VISIT(traverse_module_state->__pyx_n_s_bool);
   Py_VISIT(traverse_module_state->__pyx_n_s_cline_in_traceback);
-  Py_VISIT(traverse_module_state->__pyx_kp_s_data_work_office_converter_pyli);
+  Py_VISIT(traverse_module_state->__pyx_kp_s_data_work_pylibreoffice_pylibre);
   Py_VISIT(traverse_module_state->__pyx_kp_u_disable);
   Py_VISIT(traverse_module_state->__pyx_kp_u_enable);
   Py_VISIT(traverse_module_state->__pyx_kp_u_gc);
@@ -2502,7 +2502,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_asyncio_coroutines __pyx_mstate_global->__pyx_n_s_asyncio_coroutines
 #define __pyx_n_s_bool __pyx_mstate_global->__pyx_n_s_bool
 #define __pyx_n_s_cline_in_traceback __pyx_mstate_global->__pyx_n_s_cline_in_traceback
-#define __pyx_kp_s_data_work_office_converter_pyli __pyx_mstate_global->__pyx_kp_s_data_work_office_converter_pyli
+#define __pyx_kp_s_data_work_pylibreoffice_pylibre __pyx_mstate_global->__pyx_kp_s_data_work_pylibreoffice_pylibre
 #define __pyx_kp_u_disable __pyx_mstate_global->__pyx_kp_u_disable
 #define __pyx_kp_u_enable __pyx_mstate_global->__pyx_kp_u_enable
 #define __pyx_kp_u_gc __pyx_mstate_global->__pyx_kp_u_gc
@@ -3469,7 +3469,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_asyncio_coroutines, __pyx_k_asyncio_coroutines, sizeof(__pyx_k_asyncio_coroutines), 0, 0, 1, 1},
     {&__pyx_n_s_bool, __pyx_k_bool, sizeof(__pyx_k_bool), 0, 0, 1, 1},
     {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
-    {&__pyx_kp_s_data_work_office_converter_pyli, __pyx_k_data_work_office_converter_pyli, sizeof(__pyx_k_data_work_office_converter_pyli), 0, 0, 1, 0},
+    {&__pyx_kp_s_data_work_pylibreoffice_pylibre, __pyx_k_data_work_pylibreoffice_pylibre, sizeof(__pyx_k_data_work_pylibreoffice_pylibre), 0, 0, 1, 0},
     {&__pyx_kp_u_disable, __pyx_k_disable, sizeof(__pyx_k_disable), 0, 1, 0, 0},
     {&__pyx_kp_u_enable, __pyx_k_enable, sizeof(__pyx_k_enable), 0, 1, 0, 0},
     {&__pyx_kp_u_gc, __pyx_k_gc, sizeof(__pyx_k_gc), 0, 1, 0, 0},
@@ -3525,7 +3525,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple_ = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_input_file, __pyx_n_s_output_file, __pyx_n_s_out_format); if (unlikely(!__pyx_tuple_)) __PYX_ERR(1, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
-  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_data_work_office_converter_pyli, __pyx_n_s_save_as, 29, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(1, 29, __pyx_L1_error)
+  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_data_work_pylibreoffice_pylibre, __pyx_n_s_save_as, 29, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(1, 29, __pyx_L1_error)
   __pyx_tuple__3 = PyTuple_Pack(1, __pyx_n_u_pdf); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(1, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
@@ -3539,7 +3539,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__4 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(1, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
-  __pyx_codeobj__5 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__4, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_data_work_office_converter_pyli, __pyx_n_s_release, 31, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__5)) __PYX_ERR(1, 31, __pyx_L1_error)
+  __pyx_codeobj__5 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__4, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_data_work_pylibreoffice_pylibre, __pyx_n_s_release, 31, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__5)) __PYX_ERR(1, 31, __pyx_L1_error)
 
   /* "(tree fragment)":1
  * def __reduce_cython__(self):             # <<<<<<<<<<<<<<
