@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.10...3.30)
 cmake_policy(SET CMP0148 NEW)
 
 project(pylibreoffice)
