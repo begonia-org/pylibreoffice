@@ -20,11 +20,16 @@ message(STATUS "Python3_EXECUTABLE: ${Python3_EXECUTABLE}")
 message(STATUS "Python3_INCLUDE_DIRS: ${Python3_INCLUDE_DIRS}")
 
 # 查找 LibreOfficeKit 的头文件和库
+file(GLOB LIBREOFFICE_INCLUDE_DIRS
+    "/opt/libreoffice*/sdk/include"
+)
+
+message(STATUS "LIBREOFFICE_INCLUDE_DIRS: ${LIBREOFFICE_INCLUDE_DIRS}")
 find_path(LIBREOFFICE_INCLUDE_DIR LibreOfficeKit/LibreOfficeKit.hxx
-          PATHS /usr/include /usr/local/include /opt/libreoffice/include
+          PATHS /usr/include /usr/local/include /opt/libreoffice/include ${LIBREOFFICE_INCLUDE_DIRS}
           PATH_SUFFIXES LibreOfficeKit)
 
-find_library(LIBREOFFICE_LIBRARY "liblibreofficekitgtk.so"
+find_library(LIBREOFFICE_LIBRARY "libreglo.so"
              PATHS /usr/lib /usr/local/lib /opt/libreoffice/lib "/usr/lib/libreoffice/program" "/usr/lib64/libreoffice/program")
 
 if (LIBREOFFICE_INCLUDE_DIR AND LIBREOFFICE_LIBRARY)
