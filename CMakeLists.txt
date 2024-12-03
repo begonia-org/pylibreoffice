@@ -1,4 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
+cmake_policy(SET CMP0148 NEW)
+
 project(pylibreoffice)
 
 # 设置工作目录

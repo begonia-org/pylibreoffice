@@ -3,8 +3,8 @@ recursive-include src *.*
 include pylibreoffice/*.pyx
 include pylibreoffice/*.py
 recursive-include pylibreoffice *.*
-recursive-exculde *.egg-info
-exculde _skbuild
+recursive-exclude *.egg-info
+exclude _skbuild
 recursive-include src *.py
 prune _skbuild
 
