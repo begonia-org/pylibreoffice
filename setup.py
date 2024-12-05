@@ -27,7 +27,7 @@ def main():
     ]
     setup(
         name="pylibreoffice",
-        version="0.1.2",
+        version="0.1.4",
         author="vforfreedom",
         url="https://github.com/begonia-org/pylibreoffice",
         platforms=["Linux"],
@@ -49,7 +49,7 @@ def main():
         cmake_args=cmake_args,
         cmake_source_dir=".",
         install_requires=[
-            "cython",
+            "Cython",
             "pybind11",
             "cmake",
         ]

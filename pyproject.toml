@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pylibreoffice"
-version = "0.1.2"
+version = "0.1.4"
 description = "A Python library for handling Microsoft Office documents, built with [LibreOfficeKit](https://docs.libreoffice.org/libreofficekit.html)."
 authors = ["vforfreedom <vforfreedom96@gmail.com>"]
 readme = "README.md"
@@ -25,7 +25,7 @@ scikit-build = "^0.18.1"
 
 [project]
 name = "pylibreoffice"
-version = "0.1.2"
+version = "0.1.4"
 description = "A Python library for handling Microsoft Office documents, built with LibreOfficeKit."
 authors = [    { name = "vforfreedom", email = "vforfreedom96@gmail.com" }
 ]

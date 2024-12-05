@@ -29,7 +29,7 @@ pip install pylibreoffice
 ## Example
 
 ```python
-from pylibreoffice.py_office import PyOffice
+from pylibreoffice.core import PyOffice
 
 
 class Example:
