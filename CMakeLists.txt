@@ -1,5 +1,4 @@
 cmake_minimum_required(VERSION 3.10...3.30)
-cmake_policy(SET CMP0148 NEW)
 
 project(pylibreoffice)
 
@@ -71,6 +70,7 @@ file(GLOB TEST_SRCS "${WORKDIR}/src/main.cxx")
 add_executable(pyoffice_demo ${TEST_SRCS})
 
 target_link_libraries(pyoffice_demo PRIVATE office)
+target_link_libraries(pyoffice_demo PRIVATE dl)
 
 # 安装 demo 程序
 install(TARGETS pyoffice_demo

@@ -7,12 +7,12 @@ namespace office
     {
         office = lok::lok_cpp_init(bin_dir.c_str());
         // 设置选项
-        office->setOption("EmbedStandardFonts", "true");
-        office->setOption("PrintArea", "A1:Z50");
-        office->setOption("ReduceImageResolution", "false");
-        office->setOption("UseLosslessCompression", "true");
-        office->setOption("headless", "true");
-        office->setOption("nocrashreport", "true");
+        // office->setOption("EmbedStandardFonts", "true");
+        // office->setOption("PrintArea", "A1:Z50");
+        // office->setOption("ReduceImageResolution", "false");
+        // office->setOption("UseLosslessCompression", "true");
+        // office->setOption("headless", "true");
+        // office->setOption("nocrashreport", "true");
     }
     Office::~Office()
     {
