@@ -12,7 +12,8 @@ packages = [
 include = [
     "pylibreoffice/*.pyx",
     "pylibreoffice/*.so",
-    "pylibreoffice/liboffice.so"
+    "pylibreoffice/liboffice.so",
+    "CMakeLists.txt"
 ]
 [tool.poetry.group.dev.dependencies]
 build = "^1.2.2.post1"
@@ -51,6 +52,9 @@ pybind11 = "^2.13.6"
 name = "mirrors"
 url = "https://mirrors.aliyun.com/pypi/simple/"
 priority = "primary"
+[tool.poetry.build]
+script = "setup.py"
+generate-setup-file = true
 
 [build-system]
 requires = ["setuptools>=75.6.0", "wheel", "scikit-build", "cmake>=3.21", "ninja", "cython", "pybind11"]
